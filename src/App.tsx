@@ -31,8 +31,7 @@ export default function App() {
       {/* Header */}
       <header className="site-header">
         <div className="logo">
-          <h2>David List</h2>
-          <p>v1.0.0</p>
+          <h2>David Levels List</h2>
         </div>
         <nav>
           <button
