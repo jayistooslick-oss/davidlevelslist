@@ -34,7 +34,7 @@ const levels: Level[] = [
   { id: 2, name: "davids goopium syrup", verifier: "David", method: "S", gdLevelId: 141467933, videoUrl: "", records: [] },
   { id: 3, name: "David is 2721", verifier: "vvKyro", method: "N", gdLevelId: 141420200, videoUrl: "https://www.youtube.com/embed/oUyWP2OgrDs", records: [] },
   { id: 4, name: "elementary for dxvid", verifier: "icedagger!!", method: "S", gdLevelId: 141747746, videoUrl: "https://www.youtube.com/embed/FfS4n13MSd4", records: [] },
-  { id: 5, name: "David's inferno", verifier: "CaesarWare", method: "N", gdLevelId: 141409971, videoUrl: "", records: [{ player: "vvKyro", percent: 100, hz: cbf, mobile: false, link: "https://www.youtube.com/watch?v=ThD9h_pMLzI" },] },
+  { id: 5, name: "David's inferno", verifier: "CaesarWare", method: "N", gdLevelId: 141409971, videoUrl: "", records: [{ player: "vvKyro", percent: 100, hz: 1000000, mobile: false, link: "https://www.youtube.com/watch?v=ThD9h_pMLzI" },] },
   { id: 6, name: "David trials 2", verifier: "David", method: "N", gdLevelId: 141632448, videoUrl: "", records: [] },
   { id: 7, name: "davids sonic wave", verifier: "vvKyro", method: "N", gdLevelId: 141791872, videoUrl: "https://www.youtube.com/embed/pQZU-9AJDPc", records: [] },
   { id: 8, name: "David rage stage", verifier: "CaesarWare", method: "N", gdLevelId: 142215712, videoUrl: "https://www.youtube.com/embed/HCPh47shZjA", records: [] },
