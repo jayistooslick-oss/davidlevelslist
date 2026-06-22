@@ -30,7 +30,7 @@ export interface Level {
 }
 
 const levels: Level[] = [
-  { id: 1, name: "cp for david", verifier: "", method: "N", gdLevelId: 141509275, videoUrl: "", records: [] },
+  { id: 1, name: "cp for david", verifier: "ShayPlazYT", method: "N", gdLevelId: 141509275, videoUrl: "", records: [] },
   { id: 2, name: "haunted david", verifier: "ballwizard", method: "N", gdLevelId: 142939175, videoUrl: "https://www.youtube.com/embed/zT1PBI0nLBg", records: [] },
   { id: 3, name: "davids goopium syrup", verifier: "David", method: "S", gdLevelId: 141467933, videoUrl: "", records: [] },
   { id: 4, name: "David is 2721", verifier: "vvKyro", method: "N", gdLevelId: 141420200, videoUrl: "https://www.youtube.com/embed/oUyWP2OgrDs", records: [] },
