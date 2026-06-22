@@ -23,10 +23,10 @@ const players: Player[] = [
   { rank: 5, name: "David", points: 1267, hardestLevel: "davids goopium syrup" },
   { rank: 6, name: "limboproductions", points: 1267, hardestLevel: "haunted david" },
   { rank: 7, name: "ShayPlazYT", points: 375, hardestLevel: "DavidFemHouse" },
-  { rank: 7, name: "randomperson", points: 333, hardestLevel: "David rage stage" },
-  { rank: 8, name: "chudlas", points: 0, hardestLevel: "Davids retray wave" },
-  { rank: 8, name: "sirius", points: 0 },
-  { rank: 9, name: "ratafak", points: 67, hardestLevel: "thinking space 2" },
+  { rank: 8, name: "randomperson", points: 333, hardestLevel: "David rage stage" },
+  { rank: 9, name: "chudlas", points: 0, hardestLevel: "Davids retray wave" },
+  { rank: 10, name: "sirius", points: 0 },
+  { rank: 11, name: "ratafak", points: 67, hardestLevel: "thinking space 2" },
 ];
 
 export default players;
