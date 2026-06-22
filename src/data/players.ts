@@ -22,6 +22,7 @@ const players: Player[] = [
   { rank: 4, name: "vvKyro", points: 1461, hardestLevel: "elementary for dxvid" },
   { rank: 5, name: "David", points: 1267, hardestLevel: "davids goopium syrup" },
   { rank: 6, name: "limboproductions", points: 1267, hardestLevel: "haunted david" },
+  { rank: 7, name: "ShayPlazYT", points: 375, hardestLevel: "DavidFemHouse" },
   { rank: 7, name: "randomperson", points: 333, hardestLevel: "David rage stage" },
   { rank: 8, name: "chudlas", points: 0, hardestLevel: "Davids retray wave" },
   { rank: 8, name: "sirius", points: 0 },
