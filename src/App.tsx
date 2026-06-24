@@ -2,13 +2,17 @@ import { useState } from 'react';
 import levels from './data/levels';
 import players from './data/players';
 import editors from './data/editors';
+import dpllLevels from './data/levels-dpll';
+import dpllPlayers from './data/players-dpll';
 import { Level, Player, Editor, score, localize } from './lib/types';
 import { Sun, Moon, Smartphone, Trophy, List, Crown } from 'lucide-react';
 
 type Tab = 'list' | 'leaderboard';
+type ListType = 'dll' | 'dpll';
 
 export default function App() {
   const [tab, setTab] = useState<Tab>('list');
+  const [listType, setListType] = useState<ListType>('dll');
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
   const [dark, setDark] = useState(() => JSON.parse(localStorage.getItem('dark') || 'false'));
 
@@ -26,12 +30,38 @@ export default function App() {
     }
   };
 
+  const handleListTypeChange = (type: ListType) => {
+    setListType(type);
+    setSelectedIdx(null);
+  };
+
+  const currentLevels = listType === 'dll' ? levels : dpllLevels;
+  const currentPlayers = listType === 'dll' ? players : dpllPlayers;
+
   return (
     <div className={dark ? 'dark' : ''}>
+      {/* List Toggle */}
+      <div className="list-toggle-bar">
+        <div className="list-toggle">
+          <button
+            className={`toggle-btn ${listType === 'dll' ? 'active' : ''}`}
+            onClick={() => handleListTypeChange('dll')}
+          >
+            DLL
+          </button>
+          <button
+            className={`toggle-btn ${listType === 'dpll' ? 'active' : ''}`}
+            onClick={() => handleListTypeChange('dpll')}
+          >
+            DPLL
+          </button>
+        </div>
+      </div>
+
       {/* Header */}
       <header className="site-header">
         <div className="logo">
-          <h2>David Levels List</h2>
+          <h2>{listType === 'dll' ? 'David Levels List' : 'Demon Point Levels List'}</h2>
         </div>
         <nav>
           <button
@@ -56,9 +86,9 @@ export default function App() {
 
       {/* Pages */}
       {tab === 'list' ? (
-        <ListPage levels={levels} selectedIdx={selectedIdx} onSelect={handleSelectLevel} editors={editors} dark={dark} />
+        <ListPage levels={currentLevels} selectedIdx={selectedIdx} onSelect={handleSelectLevel} editors={editors} dark={dark} />
       ) : (
-        <LeaderboardPage players={players} levels={levels} dark={dark} />
+        <LeaderboardPage players={currentPlayers} levels={currentLevels as Level[]} dark={dark} />
       )}
     </div>
   );
