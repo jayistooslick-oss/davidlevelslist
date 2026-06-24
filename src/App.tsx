@@ -61,7 +61,7 @@ export default function App() {
       {/* Header */}
       <header className="site-header">
         <div className="logo">
-          <h2>{listType === 'dll' ? 'David Levels List' : 'Demon Point Levels List'}</h2>
+          <h2>{listType === 'dll' ? 'David Levels List' : 'David Platformer Levels List'}</h2>
         </div>
         <nav>
           <button

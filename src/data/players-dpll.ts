@@ -1,5 +1,5 @@
 // ============================================================
-// DPLL PLAYERS / LEADERBOARD - Demon Point Levels List
+// DPLL PLAYERS / LEADERBOARD - David Platformer Levels List
 // ============================================================
 
 export interface DPLLPlayer {
@@ -14,3 +14,6 @@ const dpllPlayers: DPLLPlayer[] = [
 ];
 
 export default dpllPlayers;
+
+
+export default dpllPlayers

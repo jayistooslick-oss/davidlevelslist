@@ -1,5 +1,5 @@
 // ============================================================
-// DPLL LEVELS - Demon Point Levels List
+// DPLL LEVELS - David Platformer Levels List
 // ============================================================
 
 export interface DPLLLevelRecord {
