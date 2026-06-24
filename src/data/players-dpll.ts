@@ -2,18 +2,10 @@
 // DPLL PLAYERS / LEADERBOARD - David Platformer Levels List
 // ============================================================
 
-export interface DPLLPlayer {
-  rank: number;
-  name: string;
-  points: number;
-  hardestLevel?: string;
-}
+import { Player } from './players';
 
-const dpllPlayers: DPLLPlayer[] = [
+const dpllPlayers: Player[] = [
   { rank: 1, name: "CeasarWare", points: 200, hardestLevel: "free DAVID" },
 ];
 
 export default dpllPlayers;
-
-
-export default dpllPlayers

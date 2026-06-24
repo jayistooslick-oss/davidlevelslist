@@ -88,7 +88,7 @@ export default function App() {
       {tab === 'list' ? (
         <ListPage levels={currentLevels} selectedIdx={selectedIdx} onSelect={handleSelectLevel} editors={editors} dark={dark} />
       ) : (
-        <LeaderboardPage players={currentPlayers} levels={currentLevels as Level[]} dark={dark} />
+        <LeaderboardPage players={currentPlayers} levels={currentLevels} dark={dark} />
       )}
     </div>
   );

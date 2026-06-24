@@ -2,25 +2,9 @@
 // DPLL LEVELS - David Platformer Levels List
 // ============================================================
 
-export interface DPLLLevelRecord {
-  player: string;
-  percent: number;
-  hz: number | 'CBF';
-  mobile: boolean;
-  link: string;
-}
+import { Level } from './levels';
 
-export interface DPLLLevel {
-  id: number;
-  name: string;
-  verifier: string;
-  method: string;
-  gdLevelId: number;
-  videoUrl: string;
-  records: DPLLLevelRecord[];
-}
-
-const dpllLevels: DPLLLevel[] = [
+const dpllLevels: Level[] = [
   { id: 1, name: "free DAVID", verifier: "CeasarWare", method: "N", gdLevelId: 0, videoUrl: "", records: [] },
 ];
 
