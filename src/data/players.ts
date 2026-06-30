@@ -25,7 +25,7 @@ const players: Player[] = [
   { rank: 7, name: "limboproductions", points: 1267, hardestLevel: "haunted david" },
   { rank: 8, name: "ShayPlazYT", points: 375, hardestLevel: "DavidFemHouse" },
   { rank: 9, name: "randomperson", points: 333, hardestLevel: "David rage stage" },
-  { rank: 10, name: "chudlas", points: 0, hardestLevel: "Davids retray wave" },
+  { rank: 10, name: "chudlas", points: 98, hardestLevel: "Davids retray wave" },
   { rank: 11, name: "sirius", points: 0 },
   { rank: 12, name: "ratafak", points: 67, hardestLevel: "thinking space 2" },
 ];
